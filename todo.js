@@ -2,7 +2,8 @@ var data = {
     a: 1,
     rawHtml: '<span style="color:red">this is shuld be</span>',
     color: 'blue',
-    isActive: true
+    isActive: true,
+    type: 'A'
 };
 
 
