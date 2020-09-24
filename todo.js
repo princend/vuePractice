@@ -4,7 +4,9 @@ var data = {
     color: 'blue',
     isActive: true,
     type: 'A',
-    visible: true
+    visible: true,
+    items: [{ message: 'm1' }, { message: 'm2' }],
+    object: { a: '111', b: '222', c: '333' }
 };
 
 
