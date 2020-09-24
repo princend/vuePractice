@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>vue practice</title>
+</head>
+
+<body>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+    <script src="vue.js" type="text/javascript" charset="utf-8"></script>
+
+
+    <div id="app">
+        {{a}}
+        <p v-html="rawHtml"></p>
+
+        <div v-bind:class="color">test...</div>
+        <div @click="click1">
+
+            <div @click.stop="click2">
+                clickme
+            </div>
+        </div>
+
+
+        <div :class="{active:isActive}">
+            bind-class
+        </div>
+
+        <div :style="{color:'red'}"> ggg</div>
+    </div>
+    <script src="todo.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="todo.css" type="text/css">
+
+
+    <!--     <script type="text/javascript">
+        var data = { a: 1 };
+        var vm = new Vue({
+            el: '#app',
+            data: data
+        })
+
+        vm.$watch('a', (newval, oldval) => {
+            console.log(newval, oldval);
+        })
+        vm.$data.a = 'test';
+
+
+    </script> -->
+
+
+</body>
+
+</html>
