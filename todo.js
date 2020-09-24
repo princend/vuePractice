@@ -3,7 +3,8 @@ var data = {
     rawHtml: '<span style="color:red">this is shuld be</span>',
     color: 'blue',
     isActive: true,
-    type: 'A'
+    type: 'A',
+    visible: true
 };
 
 
