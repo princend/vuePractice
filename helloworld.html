@@ -54,6 +54,13 @@
                 {{key}}:{{value}}</li>
         </ul>
         <!--  -->
+
+        <!-- on-click -->
+        <div>
+            <button v-on:click="counter+=1">數值:{{counter}}</button>
+            <button v-on:click="greet('abc',$event)">Greet</button>
+        </div>
+        <!--  -->
     </div>
     <script src="todo.js" type="text/javascript" charset="utf-8"></script>
     <link rel="stylesheet" href="todo.css" type="text/css">
