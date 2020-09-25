@@ -23,10 +23,11 @@ var updated = function () { console.log('updated'); }
 var click1 = function () { console.log('click1'); }
 var click2 = function () { console.log('click2'); }
 var greet = function (str, e) { console.log(e);; alert(str); };
+var submit = function () { console.log(this.message); }
 var vm = new Vue({
     el: '#app',
     data: data,
-    methods: { click1: click1, click2: click2, greet: greet },
+    methods: { click1: click1, click2: click2, greet: greet, submit: submit },
     beforeCreate: beforeCreate,
     created: created,
     beforeMount: beforeMount,
