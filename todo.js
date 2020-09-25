@@ -7,7 +7,8 @@ var data = {
     visible: true,
     items: [{ message: 'm1' }, { message: 'm2' }],
     object: { a: '111', b: '222', c: '333' },
-    counter: 0
+    counter: 0,
+    message: ''
 };
 
 
@@ -19,7 +20,7 @@ var beforeUpdate = function () { console.log('beforeUpdate'); }
 var updated = function () { console.log('updated'); }
 var click1 = function () { console.log('click1'); }
 var click2 = function () { console.log('click2'); }
-var greet = function (str,e) { console.log(e);;alert(str); };
+var greet = function (str, e) { console.log(e);; alert(str); };
 var vm = new Vue({
     el: '#app',
     data: data,

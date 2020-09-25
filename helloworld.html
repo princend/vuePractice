@@ -58,7 +58,15 @@
         <!-- on-click -->
         <div>
             <button v-on:click="counter+=1">數值:{{counter}}</button>
-            <button v-on:click="greet('abc',$event)">Greet</button>
+            <button v-on:click="greet(message,$event)">Greet</button>
+        </div>
+        <!--  -->
+
+        <!-- model binding -->
+        <div>
+            <input v-model="message">
+            <p>Message is {{message}}</p>
+
         </div>
         <!--  -->
     </div>
