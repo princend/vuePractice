@@ -8,7 +8,9 @@ var data = {
     items: [{ message: 'm1' }, { message: 'm2' }],
     object: { a: '111', b: '222', c: '333' },
     counter: 0,
-    message: ''
+    message: '',
+    checkedNames: ['john'],
+    picked: ""
 };
 
 

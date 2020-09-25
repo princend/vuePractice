@@ -68,6 +68,24 @@
             <p>Message is {{message}}</p>
 
         </div>
+
+        <div>
+            <input type="checkbox" id="jack" value="jack" v-model="checkedNames">
+            <label for="jack">jack</label>
+            <input type="checkbox" id="john" value="john" v-model="checkedNames">
+            <label for="john">john</label>
+            <input type="checkbox" id="tom" value="tom" v-model="checkedNames">
+            <label for="tom">tom</label>
+            <br>
+            <span>choose:{{checkedNames}}</span>
+        </div>
+
+        <div>
+            <input type="radio" id="one" value="one" v-model="picked"><label for="one">one</label><br>
+            <input type="radio" id="two" value="two" v-model="picked"><label for="two">two</label><br>
+            <span>picked:{{picked}}</span>
+        </div>
+
         <!--  -->
     </div>
     <script src="todo.js" type="text/javascript" charset="utf-8"></script>
