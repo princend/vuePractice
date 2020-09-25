@@ -85,15 +85,20 @@
             <input type="radio" id="two" value="two" v-model="picked"><label for="two">two</label><br>
             <span>picked:{{picked}}</span>
         </div>
-
-        <!--  -->
-
         <div>
             <button type="button" @click="submit">
                 提交
             </button>
         </div>
+        <!--  -->
+
+        <!-- component -->
+        <button-counter title="title1:" @clicknow="clicknow"></button-counter>
+        <button-counter title="title2:"></button-counter>
+        <!--  -->
+
     </div>
+    <script src="button-counter.js" type="text/javascript" charset="utf-8"></script>
     <script src="todo.js" type="text/javascript" charset="utf-8"></script>
     <link rel="stylesheet" href="todo.css" type="text/css">
 
